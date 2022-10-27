@@ -17,13 +17,10 @@ public class ReadTest {
 		}
 		System.out.println(sb.toString());
 		String feedsToBeSent = sb.toString();
-//        Design a RSS news feed Manager which should read and store the news from RSS
-
-//        API( http://cio.economictimes.indiatimes.com/rss/topstories). Manager must send the updated news to connected users who are authenticated.
-
-//        Also the system must send feeds to the users whenever an update receives from RSS API. 
-//		  The system should not send feeds which are already sent. An efficient compression must be used by the system for transferring feeds to its users.
-
+//      Also the system must send feeds to the users whenever an update receives from RSS API. 
+//		The system should not send feeds which are already sent. An efficient compression must be used by the system for transferring feeds to its users.
+//      Each news records send from System must have fields “News Header, News published date & News description”. 
+//		News header content size and Description content size will be dynamic 
 		String loggedInUser="bjambu20@gmail.com";//change accordingly
 		String from="flowerplus12345@gmail.com";//change accordingly
 		String password="*****";//change accordingly
@@ -58,11 +55,6 @@ public class ReadTest {
 		System.out.println("RSS Feed sent successfully");
 
 		} catch (MessagingException e) {throw new RuntimeException(e);}
-		
-//        Each news records send from System must have fields “News Header, News published date & News description”. 
-//		  News header content size and Description content size will be dynamic 
-
-//        Details available in the project attachment. 
 		
 	}
 }
