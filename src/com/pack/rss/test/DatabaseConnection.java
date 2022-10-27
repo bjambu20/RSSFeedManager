@@ -10,7 +10,7 @@ public class DatabaseConnection {
   
     static
     {
-        String url = "jdbc:mysql:// localhost:3306/org";
+        String url = "jdbc:mysql://localhost:3306/rss";
         String user = "root";
         String pass = "root";
         try {
