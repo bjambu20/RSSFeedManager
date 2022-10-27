@@ -15,6 +15,10 @@ import com.pack.rss.read.RSSFeedParser;
 public class ReadTest {
 
 	public static final String feedUrl = "https://cio.economictimes.indiatimes.com/rss/topstories";
+	public static final String fromUser= "flowerplus1234@gmail.com";
+	public static final String toUser= "bjambu20@gmail.com";
+	public static final String password= "********";
+	public static final String subject= "RSS Feed";
 	public static Connection connection = null;
 	public static Statement statement = null;
 
@@ -62,7 +66,7 @@ public class ReadTest {
 
 			// if yes, send feeds to authenticated users.
 			// send rss feed over email
-			Mailer.send("flowerplus1234@gmail.com", "****", "bjambu20@gmail.com", "RSS Feed", feedsToBeSent); //change if needed
+			Mailer.send(fromUser, password, toUser, subject, feedsToBeSent); //change if needed
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
