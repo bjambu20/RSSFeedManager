@@ -12,7 +12,7 @@ import com.pack.rss.model.Feed;
 import com.pack.rss.model.FeedMessage;
 import com.pack.rss.read.RSSFeedParser;
 
-public class ReadTest {
+public class SendRSSFeed {
 
 	public static final String feedUrl = "https://cio.economictimes.indiatimes.com/rss/topstories";
 	public static final String fromUser= "flowerplus1234@gmail.com";
